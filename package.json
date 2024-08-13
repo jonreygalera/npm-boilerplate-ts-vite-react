@@ -1,0 +1,56 @@
+{
+  "name": "@mreycode/npm-boilerplate-ts-vite-react",
+  "description": "boilerplate",
+  "author": "Jon Rey Galera <jonreygalera@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jonreygalera/npm-boilerplate-ts-vite-react.git",
+    "directory": "src"
+  },
+  "homepage": "https://mreys.net",
+  "private": false,
+  "version": "0.0.0",
+  "type": "module",
+  "main": "dist/index.umd.cjs",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.umd.cjs"
+    }
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "lint": "eslint .",
+    "preview": "vite preview"
+  },
+  "peerDependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.8.0",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "@vitejs/plugin-react-swc": "^3.5.0",
+    "eslint": "^9.8.0",
+    "eslint-plugin-react-hooks": "^5.1.0-rc.0",
+    "eslint-plugin-react-refresh": "^0.4.9",
+    "globals": "^15.9.0",
+    "typescript": "^5.5.3",
+    "typescript-eslint": "^8.0.0",
+    "vite": "^5.4.0",
+    "vite-plugin-dts": "^4.0.1"
+  },
+  "keywords": [
+    "react", 
+    "boilerplate", 
+    "vite", 
+    "typescript" 
+  ]
+}
